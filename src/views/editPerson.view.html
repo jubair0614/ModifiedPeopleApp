@@ -1,0 +1,19 @@
+<div class="container m-t-10px">
+    <form>
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" class="form-control" ng-model="editPCtlr.personInfo.name">
+        </div>
+        <div class="form-group">
+            <label>Address: </label>
+            <input type="text" class="form-control" ng-model="editPCtlr.personInfo.address">
+        </div>
+        <div class="form-group">
+            <label>Mobile Number: </label>
+            <input type="number" class="form-control" ng-model="editPCtlr.personInfo.mobileNumber">
+        </div>
+        <button id="save" class="btn btn-success"  ng-click="editPCtlr.updatePeople()">Save</button>
+    </form>
+    <br>
+    <button class="btn btn-primary" ng-click="editPCtlr.showAllPeople()">All People</button>
+</div>
